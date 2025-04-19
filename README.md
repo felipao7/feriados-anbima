@@ -32,13 +32,10 @@ feriados-anbima/
 ├── README.md             # Documentação principal
 ├── requirements.txt      # Dependências do projeto
 ├── setup.py              # Script de instalação do pacote
-│
 └── src/
     ├── anbima.py          # Funções para listar os feriados
-    │
     ├── feriados/
     │   └── feriados_anbima.xls  # Arquivo com os feriados da ANBIMA
-    │
     └── tests/
         └── test_holidays.py     # Testes usando Pytest
 ```
