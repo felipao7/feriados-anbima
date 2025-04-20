@@ -8,7 +8,7 @@ def _load_sheet_holidays() -> xlrd.sheet.Sheet:
     Carrega o arquivo dos feriados da anbima
 
     Returns:
-        <class 'xlrd.sheet.Sheet'>: Um objeto contendo os dados do xls.
+        <class 'xlrd.sheet.Sheet'>: Objeto contendo os dados do xls.
 
     Examples:
         >>> _load_sheet_holidays()
@@ -24,12 +24,11 @@ def holidays() -> list[date]:
     Buscar os feriados nacionais da anbima.
 
     Returns:
-        list[date]: Lista contendo datas de feriados no formato datetime.
+        list[date]: Lista contendo datas de feriados no formato date.
 
     Examples:
         >>> holidays()
-        date(2019, 6, 20)
-        date(2019, 9, 7)
+        [date(2019, 6, 20), date(2019, 9, 7), ...]
     """
     sheet = _load_sheet_holidays()
     return [
